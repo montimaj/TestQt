@@ -1,8 +1,0 @@
-project (TestQt)
-find_package(KDE4 REQUIRED)
-include (KDE4Defaults)
-include_directories(${KDE4_INCLUDES})
-set(TestQt_SRCS main.cpp)
-kde4_add_executable(TestQt ${TestQt_SRCS})
-target_link_libraries(TestQt ${KDE4_KDEUI_LIBS})
-install(TARGETS TestQt  ${INSTALL_TARGETS_DEFAULT_ARGS})
